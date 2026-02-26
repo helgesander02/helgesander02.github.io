@@ -1,81 +1,266 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Sander Hsu</title>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<!-- jQuery (necessary JavaScript plugins) -->
-<!-- script src="js/jquery.min.js"></script>
-<!-- Custom Theme files -->
- <link href="css/dashboard.css" rel="stylesheet">
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-
-<!-- Custom Theme files -->
-<!--//theme-style-->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Sander Hsu" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-<!-- start menu -->
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Software Developer with 4+ years experience in AI infrastructure, ML workflows, and automated evaluation systems.">
+    <meta name="keywords" content="AI Engineer, Machine Learning, Software Engineer, Taiwan, Sander Hsu">
+    <meta name="author" content="Po Wei (Sander) Hsu">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sander Hsu - Software Developer">
+    <meta property="og:description" content="Professional portfolio showcasing AI/ML projects and experience">
+    <meta property="og:image" content="https://helgesander02.github.io/images/profile.jpeg">
+    <meta property="og:url" content="https://helgesander02.github.io">
+    
+    <title>Sander Hsu - Software Developer | Portfolio</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Po Wei (Sander) Hsu",
+      "jobTitle": "Software Developer",
+      "url": "https://helgesander02.github.io",
+      "sameAs": [
+        "https://www.linkedin.com/in/sander-hsu",
+        "https://github.com/helgesander02"
+      ],
+      "alumniOf": "National Pingtung University",
+      "email": "helgesan0202@gmail.com",
+      "telephone": "+886976006726",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "Taiwan"
+      }
+    }
+    </script>
 </head>
 <body>
-<!-- header -->
-<div class="col-sm-3 col-md-2 sidebar">
-		 <div class="sidebar_top">
-			 <h1>Sander Hsu</h1> 
-			 <img src="images/profile.jpeg" alt=""/>
-		 </div>
-		<div class="details">
-			 <h3>EMAIL</h3>
-			 <p>helgesan0202@gmail.com</p>
-		</div>
-		<div class="clearfix"></div>
-</div>
-<!---->
-<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
-<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
-	<!---//pop-up-box---->			
-<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-	 <div class="content">
-		 <div class="details_header">
-			 <ul>
-				 <li><a href="index.html"><b>Home</b></a></li>
-				 <li><a href="resume/Resume.pdf"><b>Resume</b></a></li>
-				 <li><a href="cv/ShusenWang.pdf"><b>Projects</b></a></li>
-			 </ul>
-		 </div>
-		 
-		 <div class="company">
-			<h3 class="clr1">About Me</h3>
-			<div class="company_details">
-                
-		 	</div>
-		 </div>
-         
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Sander Hsu</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="resume/Resume.pdf" class="nav-link" target="_blank">Resume</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <div class="nav-social">
+                    <a href="https://github.com/helgesander02" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sander-hsu" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:helgesan0202@gmail.com" aria-label="Email">
+                        <svg class="social-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </a>
+                </div>
+            </ul>
+        </div>
+    </nav>
 
-		 
-		 <div class="education">
-			<h3 class="clr2">Experience</h3>
-			<div class="education_details">
-                
-			</div>
-		 </div>
-		 
-		 
-		 
-		 <div class="skills">
-			<h3 class="clr3">Representative Papers
-			<div class="skills_details">
-                
-			</div>
-		 </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="images/profile.jpeg" alt="Sander Hsu" class="profile-photo">
+            </div>
+            <div class="hero-text">
+                <p class="hero-greeting">Hello! I'm</p>
+                <h1 class="hero-name">Po Wei (Sander) Hsu</h1>
+                <p class="hero-title">Software Developer</p>
+                <p class="hero-description">
+                    Passionate about building reliable ML infrastructure and automated evaluation systems. 
+                    With 4+ years of experience, I specialize in creating robust AI pipelines, 
+                    containerized services, and monitoring solutions that power production AI products.
+                </p>
+                <div class="hero-buttons">
+                    <a href="resume/Resume.pdf" class="btn btn-primary" download>
+                        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                        Download Resume
+                    </a>
+                    <a href="blog.html" class="btn btn-secondary">
+                        View Blog
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section">
+        <div class="section-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    Hello! I'm Sander Hsu, an AI Software Engineer passionate about building reliable ML infrastructure 
+                    and automated evaluation systems. With 4+ years of experience across companies like Ubiquiti and Pegatron, 
+                    I specialize in creating robust AI pipelines, containerized services, and monitoring solutions that power 
+                    production AI products.
+                </p>
+                <p class="about-text">
+                    I hold a BBA in Management Information Systems from National Pingtung University, where I also served 
+                    as a Research Assistant, contributing to cutting-edge research in Time-Sensitive Networking for Industrial IoT systems.
+                </p>
+                <p class="about-text">
+                    When I'm not coding, you'll find me exploring new ML frameworks, contributing to open-source projects, 
+                    or writing technical articles to share knowledge with the developer community.
+                </p>
+
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-number">4+</div>
+                        <div class="highlight-label">Years Experience</div>
+                        <p class="highlight-description">Working on AI infrastructure and ML systems</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-number">X</div>
+                        <div class="highlight-label">XX</div>
+                        <p class="highlight-description">XXXX</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-number">X</div>
+                        <div class="highlight-label">XX</div>
+                        <p class="highlight-description">XXXX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" style="background-color: var(--neutral-50);">
+        <div class="section-container">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">My professional journey in AI and software engineering</p>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Dec 2024 - Present</div>
+                    <h3 class="timeline-title">AI Software Engineer</h3>
+                    <div class="timeline-company">Ubiquiti, Taipei/Taiwan</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">May 2024 - Nov 2024</div>
+                    <h3 class="timeline-title">AI Software Engineering Intern</h3>
+                    <div class="timeline-company">Pegatron Corporation, Taipei/Taiwan</div>
+                    <p class="timeline-description">
+                        Developed scalable data pipelines and optimized preprocessing with semantic chunking, improving recall by 5%. 
+                        Built multi-modal Agent response visualizations using React Charts for structured data presentation.
+                    </p>
+                    <div class="timeline-tech">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Next.js</span>
+                        <span class="skill-badge">FastAPI</span>
+                        <span class="skill-badge">LangChain</span>
+                        <span class="skill-badge">RAG</span>
+                        <span class="skill-badge">Milvus</span>
+                        <span class="skill-badge">MongoDB</span>
+                        <span class="skill-badge">MariaDB</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Sep 2024 - Nov 2024</div>
+                    <h3 class="timeline-title">SQA Automation Engineering Intern</h3>
+                    <div class="timeline-company">SWAG, Taipei/Taiwan</div>
+                    <p class="timeline-description">
+                        Developed and integrated Cypress/Node.js front-end test automation framework with GitHub Actions, 
+                        achieving 70% test coverage and 3× faster release validation process.
+                    </p>
+                    <div class="timeline-tech">
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">Cypress</span>
+                        <span class="skill-badge">GitHub Actions</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Apr 2023 - Mar 2025</div>
+                    <h3 class="timeline-title">Research Assistant</h3>
+                    <div class="timeline-company">National Pingtung University, Remote</div>
+                    <p class="timeline-description">
+                        Researched TSN (Time-Sensitive Networking) multicast routing for deterministic Industrial IoT systems. 
+                        Designed and implemented OMRSS, a Go-based multicast simulation framework published as open-source.
+                    </p>
+                    <div class="timeline-tech">
+                        <span class="skill-badge">Golang</span>
+                        <span class="skill-badge">Network Protocol</span>
+                        <span class="skill-badge">Algorithm Research</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section">
+        <div class="section-container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <p class="section-subtitle">Tools and technologies I work with</p>
+            
+            <div class="skills-grid">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">Golang</span>
+                <span class="skill-badge">Node.js</span>
+                <span class="skill-badge">Next.js</span>
+                <span class="skill-badge">FastAPI</span>
+                <span class="skill-badge">LangChain</span>
+                <span class="skill-badge">LangGraph</span>
+                <span class="skill-badge">PyTorch</span>
+                <span class="skill-badge">Docker</span>
+                <span class="skill-badge">Kubernetes</span>
+                <span class="skill-badge">K3S</span>
+                <span class="skill-badge">Helm</span>
+                <span class="skill-badge">AWS S3</span>
+                <span class="skill-badge">Grafana</span>
+                <span class="skill-badge">Prometheus</span>
+                <span class="skill-badge">Airflow</span>
+                <span class="skill-badge">MongoDB</span>
+                <span class="skill-badge">PostgreSQL</span>
+                <span class="skill-badge">Milvus</span>
+                <span class="skill-badge">RAG</span>
+                <span class="skill-badge">Cypress</span>
+                <span class="skill-badge">GitHub Actions</span>
+                <span class="skill-badge">CI/CD</span>
+                <span class="skill-badge">CVAT</span>
+                <span class="skill-badge">DVC</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-copyright">© 2026 Sander Hsu. Built with ❤️</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
